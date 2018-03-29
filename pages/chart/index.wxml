@@ -1,0 +1,12 @@
+<!--pages/chart/index.wxml-->
+<view class='title'>饼图</view>
+<canvas class="canvas" canvas-id="pie"></canvas>
+
+<view class='title'>线图</view>
+<canvas class="canvas" canvas-id="line"></canvas>
+
+<view class='title'>柱状图</view>
+<canvas class="canvas" canvas-id="column"></canvas>
+
+<view class='title'>区域图</view>
+<canvas class="canvas" canvas-id="area"></canvas>

@@ -1,0 +1,6 @@
+<!--pages/pushrefresh/index.wxml-->
+
+<view class='listview' wx:for="{{list}}" wx:key="item">
+ 
+  <button>{{item.name}}</button>
+</view>

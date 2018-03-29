@@ -1,0 +1,47 @@
+<!--pages/modal/index.wxml-->
+
+<button bindtap='showsheet'>Sheet弹窗</button>
+<!--默认action-sheet为隐藏，由button触发-->
+<action-sheet hidden="{{actionSheetHidden}}" >
+
+    <block wx:for-items="{{actionSheetItems}}" wx:key="item"> 
+        <action-sheet-item  data-id="{{item}}" bindtap="itemSheet">{{item}}</action-sheet-item>
+    </block>
+    <!--自动隐藏action-sheet-->
+    <action-sheet-cancel bindtap="cancelSheet">取消</action-sheet-cancel>
+</action-sheet>
+
+
+<button bindtap='showModal'>原生Modal弹窗</button>
+
+
+<button bindtap='showVModal'>模仿Modal弹窗</button>
+<!--弹窗选择-->
+<view class="commodity_screen" bindtap="hideModal" wx:if="{{showmodal}}"></view>
+<view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showmodal}}">
+ 
+  <!--内容部分-->
+  <view class='topview'>
+    <view class='titleview'>弹窗的标题</view>
+    <!--关闭按钮-->
+    <view class="closeview" bindtap="hideModal">
+     <image src='/resources/close.png' class='closecss'></image>
+    </view>
+  </view>
+  <!--产品图片-->
+  <view class='proinfoimg'>
+    <image src='/resources/shibai.jpg' class="proinfoimgcss"></image>
+  </view>
+</view>
+
+
+<button bindtap='showSToast'>Toast成功弹窗</button>
+
+
+<button bindtap='showFToast'>Toast失败弹窗</button>
+
+
+<button bindtap='showSLoading'>Loading显示弹窗</button>
+
+
+<button bindtap='showHLoading'>Loading隐藏弹窗</button>

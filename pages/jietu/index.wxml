@@ -1,0 +1,10 @@
+<!--pages/jietu/index.wxml-->
+<view class='page'>
+  
+  <!--上传图片-->
+  <view class='uploadtu'>    
+    <image src='{{uploadtu}}' class="uploading" bindtap='uploadtu'></image>   
+  </view>
+
+</view>
+

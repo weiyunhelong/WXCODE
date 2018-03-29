@@ -1,0 +1,22 @@
+{
+  "pages":[  
+    "pages/index/index", 
+    "pages/chart/index",   
+    "pages/logs/logs",
+    "pages/modal/index",
+    "pages/pushrefresh/index",
+    "pages/wxParse/index",
+    "pages/map/index",
+    "pages/jietu/index",
+    "pages/cutInside/cutInside",
+    "pages/calendar/index",
+    "pages/calendarTemplate/index",    
+    "pages/datepickerTemplate/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}
