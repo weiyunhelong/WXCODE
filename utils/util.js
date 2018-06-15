@@ -60,10 +60,22 @@ function json2Form(json){
 	return str.join("&");
 }
 
+//录音的时间
+function recordTime(date) {
+
+  var month = date.getMonth() + 1
+  var day = date.getDate()
+
+  var hour = date.getHours()
+  var minute = date.getMinutes()
+
+  return [month, day].map(formatNumber).join('/') + ' ' + [hour, minute].map(formatNumber).join(':')
+}
 
 module.exports = {
-  formatDateTime: formatDateTime,
-  formatTime: formatTime,
-  formatLocation: formatLocation,
-  json2Form:json2Form
+  formatDateTime: formatDateTime,//时间的格式化。格式为:2018/03/28  18:05:38
+  formatTime: formatTime,//时间的格式化。格式为:18:05:38
+  formatLocation: formatLocation,//格式化经纬度
+  json2Form: json2Form,//参数特殊的请求参数
+  recordTime: recordTime,//录音的时间
 }

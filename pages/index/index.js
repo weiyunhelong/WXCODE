@@ -9,7 +9,7 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     grids: [
     {
-      name:'日历插件',
+      name:'日历模板页面',
       url:'../calendar/index'
     },
     {
@@ -41,8 +41,40 @@ Page({
       url: '../pushrefresh/index'
     },
     {
-      name: '富文本插件',
+      name: '富文本模板',
       url: '../wxParse/index'
+    },
+    {
+      name: '左滑删除',
+      url: '../leftdel/index'
+    },
+    {
+      name: '时间戳转换',
+      url: '../timechuo/index'
+    },
+    {
+      name: 'Canvas画图',
+      url: '../canvastu/index'
+    },
+    {
+      name: '百度地图',
+      url: '../baidumap/index'
+    },
+    {
+      name: '腾讯地图',
+      url: '../qqmap/index'
+    },
+    {
+      name: '天气预报',
+      url: '../weather/index'
+    },
+    {
+      name: '日历插件',
+      url: '../date/index'
+    },
+    {
+      name: '富文本插件',
+      url: '../htmltowxml/index'
     },
     ]
   },

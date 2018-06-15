@@ -40,6 +40,7 @@
 
 <button bindtap='showFToast'>Toast失败弹窗</button>
 
+<button bindtap='showWToast'>Toast无图标弹窗</button>
 
 <button bindtap='showSLoading'>Loading显示弹窗</button>
 

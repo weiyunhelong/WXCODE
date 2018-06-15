@@ -1,0 +1,21 @@
+<!--pages/htmltowxml/index.wxml-->
+<!--将Page中的content数据作为HTML格式渲染-->
+<htmltowxml text="{{content}}" bindWxmlTagATap="wxmlTagATap" />
+
+<!-- 禁用代码高亮功能-->
+<htmltowxml text="{{content}}" highlight="{{false}}" bindWxmlTagATap="wxmlTagATap" />
+
+<!-- 禁用代码行号显示功能-->
+<htmltowxml text="{{content}}" linenums="{{false}}" bindWxmlTagATap="wxmlTagATap" />
+
+<!-- 代码高亮样式改为tomorrow-->
+<htmltowxml text="{{content}}" highlightStyle="tomorrow" bindWxmlTagATap="wxmlTagATap" />
+
+<!--对HTML数据中的img标签的相对路径补全域名 imghost="https://www.qwqoffice.com"-->
+<htmltowxml text="{{content}}" imghost="" bindWxmlTagATap="wxmlTagATap" />
+
+<!--将Page中的text数据作为Markdown格式渲染-->
+<htmltowxml text="{{text}}" type="md" bindWxmlTagATap="wxmlTagATap" />
+
+<!-- 直接渲染Page中的已经过解析的obj数据-->
+<htmltowxml json="{{obj}}" bindWxmlTagATap="wxmlTagATap" />

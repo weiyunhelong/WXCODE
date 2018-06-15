@@ -1,0 +1,47 @@
+/* pages/timechuo/index.wxss */
+/*行样式*/
+.hangview{
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ebebeb;
+  background-color: #fff;
+  clear: both;
+}
+
+.titletxt{
+  width: 150rpx;
+  height: 100rpx;
+  float: left;
+  line-height: 100rpx;
+  margin-left: 3%;
+}
+.timev{  
+  height: 100rpx;
+  float: left;
+}
+.txtcss{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+}
+.tipcss{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  color: #ccc;
+}
+/*底部的按钮*/
+.bottomv{
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  margin-top: 50rpx;
+}
+.changebtn{
+  width: 50%;
+  height: 100rpx;
+  margin: 0 25%;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #fff;
+}

@@ -1,0 +1,60 @@
+<!--pages/timechuo/index.wxml-->
+
+<!--时间戳的值-->
+<view class='hangview'>
+  <view class='titletxt'>时间戳值:</view>
+  <view class='timev'>
+    <input type='number' class='txtcss' placeholder='请输入时间戳的值' focus='true' placeholder-class='tipcss' value='{{timechuo}}' bindblur='gettimechuo' bindconfirm='gettimechuo'></input>
+  </view>
+</view>
+
+<!--日期时间的值-->
+<view class='hangview'>
+  <view class='titletxt'>日期时间:</view>
+  <view class='timev'>
+    <text class='txtcss' decode='true'>{{datetime}}</text>
+  </view>
+</view>
+
+<!--日期的值-->
+<view class='hangview'>
+  <view class='titletxt'>日期值:</view>
+  <view class='timev'>
+    <text class='txtcss' decode='true'>{{date}}</text>
+  </view>
+</view>
+
+<!--时间的值-->
+<view class='hangview'>
+  <view class='titletxt'>时间值:</view>
+  <view class='timev'>
+    <text class='txtcss' decode='true'>{{time}}</text>
+  </view>
+</view>
+
+<!--开始转换-->
+<view class='bottomv'>
+  <button class='changebtn' bindtap='changeopt'>转换为日期时间</button>
+</view>
+
+
+<!--日期时间的值-->
+<view class='hangview' style='margin-top:40rpx;'>
+  <view class='titletxt'>日期时间:</view>
+  <view class='timev'>
+    <input type='number' class='txtcss' placeholder='请输入日期时间值yyyy-mm-dd HH:mm:ss' focus='true' placeholder-class='tipcss' value='{{datetimeval}}' bindblur='getdatetime' bindconfirm='getdatetime'></input>
+  </view>
+</view>
+
+<!--日期时间的值-->
+<view class='hangview' >
+  <view class='titletxt'>时间戳值:</view>
+  <view class='timev'>
+    <text class='txtcss' decode='true'>{{datetimechuo}}</text>
+  </view>
+</view>
+
+<!--开始转换-->
+<view class='bottomv'>
+  <button class='changebtn' bindtap='changedtopt'>转换为时间戳</button>
+</view>

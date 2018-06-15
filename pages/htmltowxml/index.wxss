@@ -1,0 +1,4 @@
+/* pages/htmltowxml/index.wxss */
+page{
+  background-color: #fff;
+}

@@ -174,6 +174,53 @@ function getDateDiff(startTime, endTime, diffType) {
   return parseInt((eTime.getTime() - sTime.getTime()) / parseInt(timeType));
 }
 
+//时间戳转日期时间(yyyy-MM-dd hh:mm:ss)
+function formatToDateTime(inputTime) {
+  var date = new Date(inputTime);
+  var y = date.getFullYear();
+  var m = date.getMonth() + 1;
+  m = m < 10 ? ('0' + m) : m;
+  var d = date.getDate();
+  d = d < 10 ? ('0' + d) : d;
+  var h = date.getHours();
+  h = h < 10 ? ('0' + h) : h;
+  var minute = date.getMinutes();
+  var second = date.getSeconds();
+  minute = minute < 10 ? ('0' + minute) : minute;
+  second = second < 10 ? ('0' + second) : second;
+  return y + '-' + m + '-' + d + ' ' + h + ':' + minute + ':' + second;
+}
+
+//时间戳转日期(yyyy-mm-dd)
+function formatToDate(inputTime) {
+  var date = new Date(inputTime);
+  var y = date.getFullYear();
+  var m = date.getMonth() + 1;
+  m = m < 10 ? ('0' + m) : m;
+  var d = date.getDate();
+  d = d < 10 ? ('0' + d) : d;
+  return y + '-' + m + '-' + d;
+}
+
+//时间戳转时间(hh:mm:ss)
+function formatToTime(inputTime) {
+  var date = new Date(inputTime);
+  var h = date.getHours();
+  h = h < 10 ? ('0' + h) : h;
+  var minute = date.getMinutes();
+  var second = date.getSeconds();
+  minute = minute < 10 ? ('0' + minute) : minute;
+  second = second < 10 ? ('0' + second) : second;
+  return h + ':' + minute + ':' + second;
+}
+
+//时间戳转时间(hh:mm:ss)
+function DateTimeToChuo(inputTime) {
+  var date = new Date(inputTime);
+
+  return date.getTime();
+}
+
 module.exports = {
   formatTime: formatTime,//时间的格式化
   getNowDate: getNowDate,//得到当前的日期:2018-03-28
@@ -189,5 +236,9 @@ module.exports = {
   getWeekNum: getWeekNum,//得到日期所在月的周数
   getYearNum: getYearNum,//得到日期所在年的周数
   getDayCount: getDayCount,//得到2个日期相差的天数
-  getDateDiff: getDateDiff//得到时间差
+  getDateDiff: getDateDiff,//得到时间差
+  formatToDateTime: formatToDateTime,//时间戳转日期时间格式.格式为:2018-03-28 18:05:38
+  formatToDate: formatToDate,//时间戳转日期格式.格式为:2018-03-28
+  formatToTime: formatToTime, //时间戳转时间格式.格式为:18: 05:38
+  DateTimeToChuo: DateTimeToChuo//时间转为时间戳
 }

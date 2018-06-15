@@ -1,0 +1,13 @@
+<!--pages/date/index.wxml-->
+<view class='chktime' bindtap='chkdate'>
+  <view class='title'>选择时间:</view>
+  <view class='timechk'>{{datetime}}</view>
+</view>
+
+<!--日历插件部分-->
+<!---
+beginTime:开始小时
+endTime:结束小时
+timeGap:2个时间间隔分钟
+-->
+<yycalendar show='{{ishow}}' beginTime="00:00" endTime="24:00" timeGap="30" bind:yybindchange="yybindchange" />

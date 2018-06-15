@@ -1,0 +1,4 @@
+/* pages/weather/index.wxss */
+page{
+  background-color: #fff;
+}

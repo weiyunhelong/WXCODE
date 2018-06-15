@@ -1,0 +1,24 @@
+<!--pages/baidumap/index.wxml-->
+
+<!--POI检索词联想功能-->
+<view class="section"> 
+  <input placeholder="输入关键字" auto-focus type="text" bindinput="bindKeyInput"/> 
+</view> 
+<view class="sug_info"> 
+  <text>{{sugData}}</text> 
+</view>
+
+<!--百度地图部分-->
+<view class="map_container"> 
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="14" show-location="true" markers="{{markers}}" bindmarkertap="makertap" bindtap='maptap'></map> 
+</view> 
+<view class="rgc_info"> 
+  <text>{{rgcData.address}}</text> 
+  <text>{{rgcData.desc}}</text> 
+  <text>{{rgcData.business}}</text> 
+</view>
+
+<!--该根据经纬度/城市名查询天气情况，支持实时天气、天气预报。-->
+<view class="weather"> 
+  <text>{{weatherData}}</text> 
+</view>

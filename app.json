@@ -1,7 +1,7 @@
 {
-  "pages":[  
-    "pages/index/index", 
-    "pages/chart/index",   
+  "pages": [
+    "pages/index/index",
+    "pages/chart/index",
     "pages/logs/logs",
     "pages/modal/index",
     "pages/pushrefresh/index",
@@ -9,14 +9,40 @@
     "pages/map/index",
     "pages/jietu/index",
     "pages/cutInside/cutInside",
+    "pages/leftdel/index",
+    "pages/timechuo/index",
+    "pages/canvastu/index",
     "pages/calendar/index",
-    "pages/calendarTemplate/index",    
+    "pages/baidumap/index",
+    "pages/qqmap/index",
+    "pages/weather/index",
+    "pages/date/index",
+    "pages/htmltowxml/index",
+    "pages/calendarTemplate/index",
     "pages/datepickerTemplate/index"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
+  },
+  "plugins": {
+    "WeatherPlugin": {
+      "version": "1.0.2",
+      "provider": "wx60d306fd175fe556"
+    },
+    "mapRoute": {
+      "version": "1.0.6",
+      "provider": "wx5bc2ac602a747594"
+    },
+    "datePlugin": {
+      "version": "1.0.1",
+      "provider": "wx6b6cb15df2836ebe"
+    },
+    "htmltowxml": {
+      "version": "1.2.0",
+      "provider": "wxa51b9c855ae38f3c"
+    }
   }
 }

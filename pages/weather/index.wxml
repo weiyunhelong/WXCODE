@@ -1,0 +1,14 @@
+<!--pages/weather/index.wxml-->
+
+<view>weather 样式的:</view>
+<weather/>
+
+
+<view>weath 样式的:</view>
+<weath/>
+
+<view>weatherlist 样式的:</view>
+<weatherlist/>
+
+<view>weathrow 样式的:</view>
+<weathrow/>

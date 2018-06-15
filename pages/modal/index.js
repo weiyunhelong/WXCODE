@@ -115,6 +115,15 @@ Page({
       mask:true
     })
   },
+  //无图标的Toast弹窗
+  showWToast:function(){
+    wx.showToast({
+      title: '无图标弹窗提示',//弹窗的内容
+      duration: 2000,//显示2秒
+      icon: 'none',
+      mask: true
+    })
+  },
   //加载弹窗
   showSLoading:function(){
     wx.showLoading({

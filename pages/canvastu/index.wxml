@@ -1,0 +1,5 @@
+<!--pages/canvastu/index.wxml-->
+<!-- canvas绘制分享图 -->
+<view class="canvas-box">
+  <canvas canvas-id="myCanvas" style="width:100%;height:{{windowHeight}}px;"></canvas>
+</view>
