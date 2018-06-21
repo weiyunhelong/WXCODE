@@ -76,6 +76,18 @@ Page({
       name: '富文本插件',
       url: '../htmltowxml/index'
     },
+    {
+      name: '播放音频',
+      url: '../playvoice/index'
+    },
+    {
+      name: '照片录音',
+      url: '../photo/index'
+    },
+    {
+      name: '特殊按钮',
+      url: '../button/index'
+    },
     ]
   },
   //事件处理函数

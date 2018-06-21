@@ -19,7 +19,10 @@
     "pages/weather/index",
     "pages/date/index",
     "pages/htmltowxml/index",
-    "pages/calendarTemplate/index",
+    "pages/playvoice/index",
+    "pages/photo/index",
+    "pages/button/index",
+    "pages/calendarTemplate/index",    
     "pages/datepickerTemplate/index"
   ],
   "window": {
