@@ -4,7 +4,8 @@
 <view class='hangview'>
   <view class='titletxt'>时间戳值:</view>
   <view class='timev'>
-    <input type='number' class='txtcss' placeholder='请输入时间戳的值' focus='true' placeholder-class='tipcss' value='{{timechuo}}' bindblur='gettimechuo' bindconfirm='gettimechuo'></input>
+    <input type='number' class='txtcss' placeholder='请输入时间戳的值' 
+     placeholder-class='tipcss' value='{{timechuo}}' bindblur='gettimechuo'  bindinput='gettimechuo' bindconfirm='gettimechuo'></input>
   </view>
 </view>
 
@@ -42,7 +43,7 @@
 <view class='hangview' style='margin-top:40rpx;'>
   <view class='titletxt'>日期时间:</view>
   <view class='timev'>
-    <input type='number' class='txtcss' placeholder='请输入日期时间值yyyy-mm-dd HH:mm:ss' focus='true' placeholder-class='tipcss' value='{{datetimeval}}' bindblur='getdatetime' bindconfirm='getdatetime'></input>
+    <input type='text' class='txtcss' placeholder='请输入yyyy-mm-dd HH:mm:ss' focus='true' placeholder-class='tipcss' value='{{datetimeval}}' bindinput='getdatetime' bindblur='getdatetime' bindconfirm='getdatetime'></input>
   </view>
 </view>
 

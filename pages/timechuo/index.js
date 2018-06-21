@@ -49,8 +49,10 @@ Page({
   },
   //获取得到时间日期值
   getdatetime: function (e) {
+  
     var that = this;
     var txtval = e.detail.value;
+    console.log("日期时间的值:" + txtval);
     that.setData({
       datetimeval: txtval
     })
@@ -69,8 +71,9 @@ Page({
     } else {
       //转为时间戳
       var datetimeval = that.data.datetimeval;
+      console.log("被转换的日期时间的值:" + datetimeval);
       var result = timetool.DateTimeToChuo(datetimeval);
-
+      console.log("转换的日期时间的值:" + result);
       that.setData({
         datetimechuo: result,
       })
