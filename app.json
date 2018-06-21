@@ -15,6 +15,7 @@
     "pages/calendar/index",
     "pages/baidumap/index",
     "pages/qqmap/index",
+    "pages/qqmap/detail",
     "pages/weather/index",
     "pages/date/index",
     "pages/htmltowxml/index",

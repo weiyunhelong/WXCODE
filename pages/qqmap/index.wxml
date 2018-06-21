@@ -1,2 +1,6 @@
-<!--pages/qqmap/index.wxml-->
-<map-route route-info="{{routeInfo}}"></map-route>
+<!--index.wxml-->
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" show-location="true" style="width:100%;height:160vw;">
+  <cover-view style="width:100%;height:160vw;">
+    <cover-image src='/resources/ditumap.jpg' mode='widthFix' bindtap='play'></cover-image>
+  </cover-view>
+</map>
