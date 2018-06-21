@@ -73,7 +73,7 @@ var validateDateTime = function (txt) {
 
 //验证时间格式
 var validateTime = function (txt) {
-  var reg = /^((20 | 21 | 22 | 23 | [0 - 1]\d)\:[0- 5][0- 9])(\:[0 - 5][0 - 9])?$/;
+  var reg = /^((20|21|22|23|[0-1]\d)\:[0-5][0-9])(\:[0-5][0-9])?$/;
   return reg.test(txt)
 }
 

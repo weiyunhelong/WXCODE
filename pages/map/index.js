@@ -42,7 +42,7 @@ Page({
    */
   onLoad: function (options) {
     var _this = this;
-
+    //得到手机的宽高
     wx.getSystemInfo({
       success: function (res) {
         //设置map高度，根据当前设备宽高满屏显示
@@ -50,16 +50,12 @@ Page({
           view: {
             Height: res.windowHeight
           }
-
         })
-
-
-
       }
     })
-
+    //定位，得到位置
     wx.getLocation({
-      type: 'wgs84', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
+      type: 'gcj02', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
       success: function (res) {
 
         _this.setData({
@@ -85,26 +81,21 @@ Page({
 
         })
       }
-
     })
-
   },
+
+  //展示区域的改变
   regionchange(e) {
     console.log("regionchange===" + e.type)
   },
 
   //点击merkers,显示地图信息
   markertap(e) {
-    console.log(e.markerId)
-
-    wx.showActionSheet({
-      itemList: ["A"],
-      success: function (res) {
-        console.log(res.tapIndex)
-      },
-      fail: function (res) {
-        console.log(res.errMsg)
-      }
+    var that=this;
+    console.log("markerID:"+e.markerId)
+    wx.openLocation({
+      latitude: that.data.latitude,
+      longitude: that.data.longitude,
     })
   },
 
