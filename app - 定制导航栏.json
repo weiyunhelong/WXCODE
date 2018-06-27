@@ -22,17 +22,18 @@
     "pages/playvoice/index",
     "pages/photo/index",
     "pages/button/index",
-    "pages/scrollview/index",
-    "pages/goods/index",
-    "pages/goods/video",
-    "pages/calendarTemplate/index",    
+    "pages/calendarTemplate/index",
     "pages/datepickerTemplate/index"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTitleText": "小程序商城",
+    "navigationBarTextStyle": "black",
+    "navigationBarBackgroundColor": "#aa154e",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#aa154e",
+    "backgroundTextStyle": "dark",
+    "navigationStyle": "custom",
+    "onReachBottomDistance":15
   },
   "plugins": {
     "WeatherPlugin": {

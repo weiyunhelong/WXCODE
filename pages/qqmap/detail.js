@@ -11,26 +11,20 @@ let routeInfo = {
   endName: "",  //终点名称 必传
   mode: 'car'  //算路方式 选填
 }
-
-
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
     routeInfo: {}
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
     console.log("获取的参数:");
     console.log(options);
-
     var that = this;
-
     that.setData({
       routeInfo: {
         startLat: parseFloat(options.startLat), //起点经度 选填

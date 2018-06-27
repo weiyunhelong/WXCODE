@@ -1,0 +1,791 @@
+/* pages/goods/index.wxss */
+page {
+  background-color: #fff;
+}
+
+/*顶部的轮播图*/
+
+.swiperview {
+  width: 100%;
+  height: 400rpx;
+}
+
+.swiperitem {
+  width: 100%;
+  height: 400rpx;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.playbtn {
+  width: 100rpx;
+  height: 100rpx;
+  position: relative;
+  top: -280rpx;
+  left: 0;
+  z-index: 9999;
+  margin-left: 300rpx;
+}
+
+/*购物车*/
+
+.cartview {
+  width: 70rpx;
+  height: 70rpx;
+  position: fixed;
+  right: 20rpx;
+  top: 40rpx;
+}
+
+.cartico {
+  width: 100%;
+  height: 100%;
+}
+
+/*商品的基本信息*/
+
+.goodsnametxt {
+  width: 98%;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  margin-left: 2%;
+}
+
+.goodspriceview {
+  width: 96%;
+  height: 80rpx;
+  margin: 0 2%;
+}
+
+.xianjiaview {
+  width: 150rpx;
+  height: 80rpx;
+  float: left;
+}
+
+.redqian {
+  font-size: 25rpx;
+  line-height: 80rpx;
+  float: left;
+  color: #f00;
+}
+
+.xianjia {
+  height: 100rpx;
+  line-height: 80rpx;
+  float: left;
+  font-size: 32rpx;
+  color: #f00;
+}
+
+.yuanjiaview {
+  width: 150rpx;
+  height: 80rpx;
+  float: left;
+}
+
+.huiqian {
+  font-size: 25rpx;
+  line-height: 80rpx;
+  float: left;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.yuanjia {
+  height: 100rpx;
+  line-height: 80rpx;
+  float: left;
+  font-size: 28rpx;
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.salenum {
+  width: 180rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #999;
+  float: left;
+}
+
+.shareview {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  margin-right: 10rpx;
+  float: right;
+  background-color: #fff;
+}
+
+.shareview::after {
+  outline: none;
+  border: 0;
+  border-radius: 0;
+  text-align: center;
+}
+
+.shareico {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 25rpx;
+}
+
+.sharetxt {
+  width: 100rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #ccc;
+  margin-top: -30rpx;
+}
+
+/**产品保证**/
+
+.baozhengview {
+  width: 96%;
+  height: 150rpx;
+  margin: 20rpx;
+  clear: both;
+}
+
+.baozhengitem {
+  width: 25%;
+  height: 150rpx;
+  float: left;
+  text-align: center;
+}
+
+.baozhengtu {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.baozhengtxt {
+  width: 100%;
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #ab8e5f;
+}
+
+.newleftjiantou {
+  width: 40rpx;
+  height: 150rpx;
+  float: left;
+  text-align: right;
+  line-height: 150rpx;
+}
+
+.newjiantoucss {
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 5rpx;
+}
+
+/*隔断层*/
+
+.geduanceng {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f0f0f0;
+}
+
+/*选取规格*/
+
+.guigeview {
+  width: 96%;
+  height: 100rpx;
+  margin: 0 2%;
+}
+
+.guigetitle {
+  width: 100rpx;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  float: left;
+}
+
+.guigetipcss {
+  width: 500rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #ccc;
+  float: left;
+  font-size: 25rpx;
+}
+
+.guigetxtcss {
+  width: 500rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+  font-size: 25rpx;
+}
+
+.rightico {
+  float: right;
+  font-size: 30rpx;
+  line-height: 100rpx;
+}
+
+/*商品评价*/
+
+.menuview {
+  width: 100%;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ebebeb;
+}
+
+.infomenu {
+  width: 120rpx;
+  height: 98rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #f00;
+  border-bottom: 2rpx solid #f00;
+  box-sizing: content-box;
+  float: left;
+  margin-left: 127.5rpx;
+}
+
+.noinfomenu {
+  width: 120rpx;
+  height: 98rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  box-sizing: content-box;
+  float: left;
+  margin-left: 127.5rpx;
+}
+
+.commentmenu {
+  width: 80rpx;
+  height: 98rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #f00;
+  border-bottom: 2rpx solid #f00;
+  box-sizing: content-box;
+  float: right;
+  margin-right: 127.5rpx;
+}
+
+.nocommentmenu {
+  width: 80rpx;
+  height: 10rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  box-sizing: content-box;
+  float: right;
+  margin-right: 127.5rpx;
+}
+
+/*活动详情*/
+
+.goodsinfo {
+  width: 100%;
+  height: auto;
+  padding-top: 20rpx;
+}
+
+.infotu {
+  width: 100%;
+  height: 500rpx;
+}
+
+/*相关推荐*/
+
+.tuijianview {
+  width: 100%;
+  height: 100rpx;
+  background-color: #f0f0f0;
+}
+
+.leftxian {
+  width: 70rpx;
+  height: 3rpx;
+  border-top: 5rpx solid #ccc;
+  float: left;
+  margin: 46rpx 30rpx 46rpx 200rpx;
+}
+
+.tuijiantxt {
+  width: 150rpx;
+  height: 100rpx;
+  float: left;
+  font-size: 25rpx;
+  text-align: center;
+  line-height: 100rpx;
+  color: #999;
+}
+
+.rightxian {
+  width: 70rpx;
+  height: 3rpx;
+  border-top: 5rpx solid #ccc;
+  float: left;
+  margin: 46rpx 200rpx 46rpx 30rpx;
+}
+
+/*推荐的商品*/
+
+.tuijianlist {
+  width: 100%;
+  height: 1200rpx;
+  background-color: #f0f0f0;
+}
+
+.goodslist {
+  width: 372rpx;
+  height: 500rpx;
+  float: left;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.goodstu {
+  width: 100%;
+  height: 350rpx;
+}
+
+.goodsname {
+  width: 94%;
+  height: 80rpx;
+  line-height: 40rpx;
+  word-break: break-all;
+  font-size: 28rpx;
+  margin: 0 3%;
+}
+
+.priceview {
+  width: 94%;
+  height: 50rpx;
+  margin: 0 3%;
+}
+
+.smqiancss {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  float: left;
+  color: #f00;
+}
+
+.smqiantxt {
+  float: left;
+  height: 50rpx;
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #f00;
+}
+
+.saletxt {
+  float: right;
+  line-height: 50rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+/*评价汇总部分*/
+
+.huizongview {
+  width: 100%;
+  height: 100rpx;
+}
+
+.huizongv {
+  width: 25%;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+}
+
+.huizongtxt {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 23rpx;
+  text-align: center;
+  margin-top: 10rpx;
+  color: #999;
+}
+
+.huizongnunm {
+  width: 100%;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 23rpx;
+  text-align: center;
+  color: #999;
+}
+
+/*评价列表部分*/
+
+.commentlsit {
+  width: 100%;
+  height: 200rpx;
+}
+
+.commenttop {
+  width: 100%;
+  height: 100rpx;
+}
+
+.txcss {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 20rpx;
+  border-radius: 30rpx;
+  float: left;
+}
+
+.username {
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+  font-size: 30rpx;
+}
+
+.datetxt {
+  float: right;
+  width: 150rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: #666;
+  margin-right: 20rpx;
+  font-size: 28rpx;
+}
+
+.commentinfo {
+  width: 80%;
+  height: 100rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+  margin: 0 10%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+/*底部的按钮层*/
+
+.bottomview {
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+/*首页按钮*/
+
+.homebtn {
+  width: 122rpx;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+}
+
+.smhomeico {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+
+.hometxt {
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+/*收藏按钮*/
+
+.collectbtn {
+  width: 120rpx;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+}
+
+.smcollectico {
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+
+.collecttxt {
+  width: 100%;
+  height: 50rpx;
+  text-align: center;
+  line-height: 50rpx;
+  color: #999;
+  font-size: 26rpx;
+}
+
+.joincart {
+  width: 255rpx;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #f39801;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.buybtn {
+  width: 255rpx;
+  height: 100rpx;
+  float: left;
+  text-align: center;
+  line-height: 100rpx;
+  background-color: #ff4546;
+  color: #fff;
+  font-size: 32rpx;
+}
+
+/*选取规格部分*/
+
+/*蒙版 */
+
+.mask {
+  width: 750rpx;
+  height: 100%;
+  background: #c0c0c0;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  opacity: 0.8;
+}
+
+/*选择规格层面*/
+
+.choose {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  width: 750rpx;
+  box-sizing: border-box;
+}
+
+/*不知道从哪点进来时候*/
+
+.choose .modal_button_two {
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+}
+
+.choose .modal_button_two button {
+  width: 50%;
+  height: 100rpx;
+  float: left;
+  color: #fff;
+  border-radius: 0px;
+}
+
+.choose .modal_button_two .modal_cart {
+  background: #ffb03f;
+}
+
+.choose .modal_button_two .modal_buy {
+  background: #f44336;
+}
+
+.modal_buttonok {
+  width: 100%;
+  height: 100rpx;
+  text-align: center;
+  line-height: 100rpx;
+  background: #f44336;
+  color: #fff;
+  font-size: 40rpx;
+}
+
+/* */
+
+.choose .spec_img_container {
+  height: 100px;
+  border-bottom: 2px solid #f5f5f5;
+  position: relative;
+}
+
+.choose .spec_img_container image {
+  width: 200rpx;
+  height: 200rpx;
+  position: absolute;
+  top: -40rpx;
+  left: 20rpx;
+  border: 2px #f5f5f5 solid;
+  border-radius: 5px;
+}
+
+.choose .spec_img_container .amount {
+  width: 400rpx;
+  color: red;
+  position: absolute;
+  top: 80rpx;
+  left: 240rpx;
+}
+
+.choose .spec_img_container .modal_de_select {
+  font-size: 28rpx;
+  color: #808080;
+  margin-top: 10rpx;
+  position: absolute;
+  top: 120rpx;
+  left: 240rpx;
+}
+
+.choose .spec_img_container .clear {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+}
+
+.choose .spec_view_container {
+  width: 100%;
+}
+
+.choose .spec_view_container .modal_spec {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+}
+
+.choose .spec_view_container .modal_spec_name {
+  margin-left: 5rpx;
+  margin-top: 10rpx;
+  font-size: 28rpx;
+  color: #8b0000;
+}
+
+.choose .spec_view_container .modal_spec_item_ {
+  width: 750rpx;
+  display: inline-block;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  min-width: 80rpx;
+  max-width: 400rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border: 2rpx #707070 solid;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+}
+
+.choose .spec_view_container .modal_spec_item_active {
+  width: 750rpx;
+  display: inline-block;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  min-width: 80rpx;
+  max-width: 400rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  /* border: 2rpx red solid; */
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  background: #c62127;
+  color: #fff;
+}
+
+.choose .buy_num {
+  margin-top: 40rpx;
+  margin-bottom: 120rpx;
+  font-size: 28rpx;
+}
+
+.choose .buy_num
+.font_num {
+  margin-left: 20rpx;
+}
+
+/*主容器*/
+
+.choose .buy_num .stepper {
+  width: 200rpx;
+  height: 62rpx;
+  /*给主容器设一个边框*/
+  border: 2rpx solid #ccc;
+  border-radius: 3px;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+
+/*加号和减号*/
+
+.choose .buy_num .stepper text {
+  width: 58rpx;
+  line-height: 62rpx;
+  text-align: center;
+  float: left;
+}
+
+/*数值*/
+
+.choose .buy_num .stepper input {
+  width: 80rpx;
+  height: 62rpx;
+  float: left;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 32rpx;
+  /*给中间的input设置左右边框即可*/
+  border-left: 2rpx solid #ccc;
+  border-right: 2rpx solid #ccc;
+}
+
+/*普通样式*/
+
+.choose .buy_num .stepper .normal {
+  color: black;
+}
+
+/*禁用样式*/
+
+.choose .buy_num .stepper .disabled {
+  color: #ccc;
+}
+
+.showdibuview{
+  width: 100%;
+  height: 100rpx;
+}

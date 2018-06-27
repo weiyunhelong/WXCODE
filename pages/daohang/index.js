@@ -1,8 +1,4 @@
-// pages/hospital/index.js
-var ipsPlugin = requirePlugin("ipsPlugin")
-
-
-
+// pages/daohang/index.js
 Page({
 
   /**
@@ -16,25 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
-    //appKey和mapID 需要向我方获取
-    //设置appkey和mapid    建议写在onLoad中
-    //ipsDemo提交审核测试时为true 正常使用下为false ！
-    ipsPlugin.init({ ipsDemo: false, ipsAppKey: 'fnAs1mE5HP', ipsMapId: 'VhsehJzuZA' });
-
-    //设置导航目的id  写在需要修改导航目的地Id的地方
-    ipsPlugin.init({ ipsTargetId: '1111' });
-
-    //报到成功回调   建议写在onLoad中
-    ipsPlugin.init({
-      ipsReportSuccess: () => {
-        //when success to do...
-        console.log('报到 成功')
-      }
-    });
-
-    //打开弹框，开启报到  写在需要报道的地方
-    ipsPlugin.open();
+  
   },
 
   /**

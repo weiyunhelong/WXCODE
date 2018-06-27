@@ -88,6 +88,14 @@ Page({
       name: '特殊按钮',
       url: '../button/index'
     },
+    {
+      name: '滚动菜单',
+      url: '../scrollview/index'
+    },
+    {
+      name: '商品选购',
+      url: '../goods/index'
+    },
     ]
   },
   //事件处理函数

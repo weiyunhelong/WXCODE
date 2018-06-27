@@ -1,0 +1,216 @@
+<!--pages/goods/index.wxml-->
+<!--pages/goods/index.wxml-->
+<!--顶部的轮播图-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiperview'>  
+      <block wx:for="{{imgUrls}}" wx:key="{{item}}" wx:for-index="x">  
+        <swiper-item class="swiperitem">  
+          <image src="{{item}}" class="slide-image"/>  
+          <image src='/resources/play.png' wx:if="{{x==0}}" catchtap='goplayvideo' class='playbtn'></image>
+        </swiper-item>  
+      </block>   
+</swiper>
+
+<!--购物车小图标-->
+<view class='cartview'>
+  <image src='/resources/gouwuche.png' class='cartico'></image>
+</view>
+
+
+<!--商品的基本信息-->
+<view class='goodsnametxt'>夏日甜心公仔抱枕</view>
+<view class='goodspriceview'>
+  <view class='xianjiaview'>
+    <view class='iconfont icon-renminbi redqian'></view>
+    <view class='xianjia'>1</view>
+  </view>
+  <view class='yuanjiaview'>
+    <view class='iconfont icon-renminbi huiqian'></view>
+    <view class='yuanjia'>1.5</view>
+  </view>
+  <view class='salenum'>销量：142件</view>
+  <button class='shareview' open-type='share'>
+     <image src='/resources/share.png' class='shareico'></image>
+  <view class='sharetxt'>分享</view>
+ </button>
+ 
+</view>
+<view style='clear:both;border-bottom:1rpx solid #ebebeb;'></view>
+
+<!--认证部分-->
+<view class='baozhengview'>
+  <view class='baozhengitem'>
+    <image src='/resources/13.png' class='baozhengtu'></image>
+    <view class='baozhengtxt'>假一赔十</view>
+  </view>
+  <view class='baozhengitem'>
+    <image src='/resources/14.png' class='baozhengtu'></image>
+    <view class='baozhengtxt'>免邮说明</view>
+  </view>
+  <view class='baozhengitem'>
+    <image src='/resources/15.png' class='baozhengtu'></image>
+    <view class='baozhengtxt'>权威鉴定</view>
+  </view>
+  <view class='baozhengitem'>
+    <image src='/resources/16.png' class='baozhengtu'></image>
+    <view class='baozhengtxt'>7天退换</view>
+  </view>
+</view>
+
+<view class='geduanceng'></view>
+
+<!--选取规格-->
+<view class='guigeview'>
+  <view class='guigetitle'>选择</view>
+  <input placeholder='规格' bindtap='modal_show' placeholder-class='guigetipcss' class='guigetxtcss' type='text' disabled='true' value='{{guige}}'></input>
+  <view class='iconfont icon-jiantou1 rightico' bindtap='modal_show'></view>
+</view>
+<view class='geduanceng'></view>
+
+<!--商品详情和评价-->
+<view class='menuview'>
+  <view class="{{isshowinfo?'infomenu':'noinfomenu'}}" bindtap='changeshow'>商品详情</view>
+  <view class="{{!isshowinfo?'commentmenu':'nocommentmenu'}}" bindtap='changeshow'>评价</view>
+</view>
+
+
+<!--商品详情-->
+<view class='goodsinfo' wx:if="{{isshowinfo}}">
+  <block wx:for="{{goodinfo}}" wx:key="item">
+    <image src='{{item}}' class='infotu'></image>
+  </block>
+</view>
+
+<!--相关推荐-->
+<view class='tuijianview' wx:if="{{isshowinfo}}">
+  <view class='leftxian'></view>
+  <view class='tuijiantxt'>相关推荐</view>
+  <view class='rightxian'></view>
+</view>
+
+
+<!--推荐列表-->
+<view class='tuijianlist' wx:if="{{isshowinfo}}">
+  <block wx:for="{{tuijianlist}}" wx:key="item" wx:for-index="x">
+    
+    <view class='goodslist' wx:if="{{x%2==0}}">
+      <image src='{{item.imgpath}}' class='goodstu'></image>
+      <view class='goodsname'>
+        <text decode='true'>{{item.name}}</text>
+      </view>
+      <view class='priceview'>
+        <view class='iconfont icon-renminbi smqiancss'></view>
+        <view class='smqiantxt'>{{item.price}}</view>
+        <view class='saletxt'>已售{{item.salenum}}件</view>
+      </view>
+    </view>
+
+   <view class='goodslist' wx:else style='margin-left:6rpx;'>
+      <image src='{{item.imgpath}}' class='goodstu'></image>
+      <view class='goodsname'>
+        <text decode='true'>{{item.name}}</text>
+      </view>
+      <view class='priceview'>
+        <view class='iconfont icon-renminbi smqiancss'></view>
+        <view class='smqiantxt'>{{item.price}}</view>
+        <view class='saletxt'>已售{{item.salenum}}件</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+<!--评价汇总-->
+<view class='huizongview' wx:if="{{!isshowinfo}}">
+
+  <view class='huizongv'>
+    <view class="huizongtxt">全部</view>
+    <view class='huizongnunm'>({{allcomnum}})</view>
+  </view>
+
+  <view class='huizongv'>
+    <view class="huizongtxt">好评</view>
+    <view class='huizongnunm'>({{goodcomnum}})</view>
+  </view>
+
+  <view class='huizongv'>
+    <view class="huizongtxt">中评</view>
+    <view class='huizongnunm'>({{zhongcomnum}})</view>
+  </view>
+
+  <view class='huizongv'>
+    <view class="huizongtxt">差评</view>
+    <view class='huizongnunm'>({{badcomnum}})</view>
+  </view>
+
+</view>
+<view class='geduanceng' wx:if="{{!isshowinfo}}"></view>
+
+
+
+<!--评价列表-->
+<block wx:for="{{commentlist}}" wx:key="item" wx:if="{{!isshowinfo}}">
+<view class='commentlsit'>
+  <view class='commenttop'>
+    <image src='{{item.tx}}' class='txcss'></image>
+    <view class='username'>{{item.username}}</view>
+    <view class='datetxt'>{{item.date}}</view>
+  </view>
+  <view class='commentinfo'>{{item.content}}</view>
+</view>
+</block>
+<view class='showdibuview'></view>
+
+
+<!--底部的操作按钮-->
+<view class='bottomview'>
+  <view class='homebtn' bindtap='gohome'>
+    <image src='/resources/smhome.png' class='smhomeico'></image>
+    <view class='hometxt'>首页</view>
+  </view>
+
+  <view class='collectbtn' bindtap='gocollect'>
+    <image src='/resources/collect.png' class='smcollectico' wx:if="{{!iscollect}}"></image>
+    <image src='/resources/collecth.png' class='smcollectico' wx:if="{{iscollect}}"></image>
+    <view class='collecttxt'>收藏</view>
+  </view>
+  
+  <view class='joincart' bindtap='goaddcart'>加入购物车</view>
+  <view class='buybtn' bindtap='gobuy'>立即购买</view>
+</view>
+
+
+<!--属性规格选择栏-->
+<view class='mask' style="display:{{choose_modal}}"></view>
+<view class="choose" style="display:{{choose_modal}}">
+  <view class="spec_img_container">
+    <image src="{{default_spe_img}}"></image>
+    <view class="amount">￥{{amount}}</view>
+    <view class="modal_de_select">已选择：{{selectName}}</view>
+    <icon class="clear" type='clear' bindtap="modal_none"></icon>
+  </view>
+  <!--选择开始 -->
+  <view class="spec_view_container">
+    <view class="modal_spec">
+      <block wx:for="{{spec}}" wx:for-item="specitem" wx:key="item">
+        <view class="modal_spec_name">{{specitem.name}}：</view>
+        <view class='modal_spec_group'>
+          <block wx:for="{{specitem.child}}" wx:for-item="item" wx:key="item">
+            <view class="{{item.isSelect ? 'modal_spec_item_active' : 'modal_spec_item_'}}" data-pid='{{specitem.id}}' data-id='{{item.id}}' bindtap='clickAttr'>{{item.name}}</view>
+          </block>
+        </view>
+      </block>
+    </view>
+  </view>
+  <!--选择结束 -->
+  <view class="buy_num">
+    <view class="font_num">购买数量：</view>
+    <view class="stepper">
+      <!-- 减号 -->
+      <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+      <!-- 数值 -->
+      <input type="number" bindchange="bindManual" value="{{num}}" />
+      <!-- 加号 -->
+      <text class="normal" bindtap="bindPlus">+</text>
+    </view>
+  </view>
+  <view class="modal_buttonok" bindtap='okopt'>确认</view>
+</view>

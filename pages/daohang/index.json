@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "小程序商城",
+  "navigationBarTextStyle": "black",
+  "navigationBarBackgroundColor": "#aa154e",
+  "enablePullDownRefresh": true,
+  "backgroundColor": "#aa154e",
+  "backgroundTextStyle": "dark",
+  "navigationStyle": "custom",
+  "onReachBottomDistance": 15
+}

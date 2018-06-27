@@ -1,0 +1,27 @@
+/* pages/goods/video.wxss */
+
+page {
+  background-color: #000;
+}
+
+.section {
+  width: 100%;
+}
+
+.videocss {
+  width: 100%;
+  height:78%;
+}
+
+.btn-area {
+  width: 100%;
+  height: 10%;
+  background: #fff;
+}
+.inputtxt{
+  height:80rpx;
+  padding:0 20rpx;  
+}
+.inputtip{
+  color: #ccc;
+}

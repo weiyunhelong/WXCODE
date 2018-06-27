@@ -1,0 +1,8 @@
+<!--pages/goods/video.wxml-->
+<view class="section tc" style='height:{{winheight}}px;'>
+  <video id="myVideo" src="{{videosrc}}" enable-danmu danmu-btn controls autoplay='true' bindpause='puashe' bindplay='play'    class='videocss'></video>
+  <view class="btn-area">
+    <input bindblur="bindInputBlur" class='inputtxt' placeholder='请输入弹幕内容' placeholder-class='inputtip' value='{{inputValue}}'/>
+    <button bindtap="bindSendDanmu">发送弹幕</button>
+  </view>
+</view>

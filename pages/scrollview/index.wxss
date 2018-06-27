@@ -1,0 +1,86 @@
+/* pages/scrollview/index.wxss */
+
+/*搜索框部分*/
+.searchview{
+  width: 100%;
+  height: 80rpx;
+  background-color: #f0f0f0;
+  padding-top:20rpx; 
+}
+.searchv{
+  width: 94%;
+  height: 60rpx;
+  margin-left:3%;
+  background-color: #fff;
+  border-radius: 10rpx;
+  text-align: center;
+}
+.smsearchicon{
+  width: 30rpx;
+  height: 30rpx;
+  float: left;
+  margin-left: 320rpx;
+  margin-top: 15rpx;
+  margin-right: 10rpx;
+}
+.searchtxt{
+  float: left;
+  color: #999;
+  font-size: 28rpx;
+  line-height: 60rpx;
+}
+
+/*分类部分*/
+/**分类栏**/  
+.classify{  
+  margin-top:20rpx;  
+}  
+.left-navbar{  
+  position:absolute;  
+  left:0;  
+  width:25%;  
+  height:90%;  
+  background-color:#eee;  
+  font-size:15px;  
+}  
+.left-navbar view{  
+  height:100rpx;  
+  line-height: 100rpx;  
+  text-align:center;  
+}  
+.active{  
+  background-color:#FFF;  
+  color:red;  
+  font-size:17px;  
+  border-left: 10rpx solid #f00;
+  box-sizing: content-box;
+}  
+#right{  
+  position:absolute;  
+  right:0;  
+  width:75%;  
+  height:90%; 
+}  
+.img-banner{  
+  height:250rpx;  
+  width:100%; 
+}  
+.goods-list{  
+  display:flex;  
+  flex-wrap:wrap;  
+  margin-top:30rpx;  
+} 
+.goods{  
+  width:150rpx;  
+  font-size:14px;  
+  margin:15rpx;  
+  text-align:center;  
+}  
+.img{  
+  width:140rpx;  
+  height:140rpx;  
+}  
+.typename{
+  width:100%;  
+  font-size:25rpx;  
+}

@@ -1,0 +1,40 @@
+<!--pages/scrollview/index.wxml-->
+<!--搜索框-->
+<view class='searchview'>
+  <view class="searchv" bindtap='gosearch'>
+    <image src='/resources/smsearch.png' class='smsearchicon'></image>
+    <view class='searchtxt'>搜索</view>
+  </view>
+</view>
+<view style='clear:both;'></view>
+
+<!--分类列表-->
+<view class="classify"> 
+
+  <!--左侧大分类导航栏-->  
+  <scroll-view class='left-navbar' scroll-y="true">  
+    <view wx:for="{{screenArray}}" class="{{ currentTab == index ? 'active' : '' }}" 
+    wx:key="unique" bindtap="{{ currentTab != index ? 'navbarTap':'' }}" id="{{index}}" data-screenId="{{item.screenId}}">
+      {{item.screenName}}  
+    </view>  
+  </scroll-view> 
+
+  <!--右侧子分类-->  
+  <scroll-view id="right" scroll-y="true" scroll-top="{{scrollTop}}">  
+    <!--顶部图片-->  
+    <view class="goods-banner">  
+      <image class="img-banner" src='{{childrenArray.fengmian}}'></image>  
+    </view>  
+    <!--商品展示--> 
+    <view class='goods-list'>
+     <block wx:for="{{childrenArray.childitems}}" wx:key="item">
+       <view  class="goods"  bindtap="gochildtype" id="{{item.id}}">  
+         <image class="img" src="{{item.ImageUrl}}"></image>  
+         <view class='typename'>{{item.Name}}</view>
+       </view> 
+     </block> 
+    </view> 
+  </scroll-view>  
+  
+  
+</view>  
