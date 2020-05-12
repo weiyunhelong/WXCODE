@@ -5,7 +5,6 @@
     "pages/logs/logs",
     "pages/modal/index",
     "pages/pushrefresh/index",
-    "pages/wxParse/index",
     "pages/map/index",
     "pages/jietu/index",
     "pages/cutInside/cutInside",
@@ -16,7 +15,6 @@
     "pages/baidumap/index",
     "pages/qqmap/index",
     "pages/qqmap/detail",
-    "pages/weather/index",
     "pages/date/index",
     "pages/htmltowxml/index",
     "pages/playvoice/index",
@@ -25,7 +23,14 @@
     "pages/scrollview/index",
     "pages/goods/index",
     "pages/goods/video",
-    "pages/calendarTemplate/index",    
+    "pages/calendarTemplate/index",
+    "pages/daohang/index",
+    "pages/maproute/index",
+    "pages/searchcom/index",
+    "pages/slideview/index",
+    "pages/tabs/index",
+    "pages/concatlist/index",
+    "pages/videoswiper/index",
     "pages/datepickerTemplate/index"
   ],
   "window": {
@@ -35,12 +40,8 @@
     "navigationBarTextStyle": "black"
   },
   "plugins": {
-    "WeatherPlugin": {
-      "version": "1.0.2",
-      "provider": "wx60d306fd175fe556"
-    },
     "mapRoute": {
-      "version": "1.0.6",
+      "version": "1.0.7",
       "provider": "wx5bc2ac602a747594"
     },
     "datePlugin": {
@@ -48,8 +49,19 @@
       "provider": "wx6b6cb15df2836ebe"
     },
     "htmltowxml": {
-      "version": "1.2.0",
+      "version": "1.4.0",
       "provider": "wxa51b9c855ae38f3c"
     }
-  }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取您位置，为您提供更加优秀的服务"
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wx0e6ed4f51db9d078",
+    "wx044080b69480de1b"
+  ],
+
+  "sitemapLocation": "sitemap.json"
 }

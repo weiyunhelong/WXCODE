@@ -1,5 +1,5 @@
 <!--pages/goods/index.wxml-->
-<!--pages/goods/index.wxml-->
+
 <!--顶部的轮播图-->
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiperview'>  
       <block wx:for="{{imgUrls}}" wx:key="{{item}}" wx:for-index="x">  
@@ -11,7 +11,7 @@
 </swiper>
 
 <!--购物车小图标-->
-<view class='cartview'>
+<view class='cartview' bindtap="goaddcart">
   <image src='/resources/gouwuche.png' class='cartico'></image>
 </view>
 

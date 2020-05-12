@@ -1,6 +1,6 @@
 <!--pages/scrollview/index.wxml-->
 <!--搜索框-->
-<view class='searchview'>
+<view class='searchview' wx:if="{{false}}">
   <view class="searchv" bindtap='gosearch'>
     <image src='/resources/smsearch.png' class='smsearchicon'></image>
     <view class='searchtxt'>搜索</view>

@@ -270,14 +270,16 @@ Page({
   },
   //立即购买
   gobuy: function () {
-    wx.redirectTo({
-      url: '../payfor/index?money=' + this.data.amount + "&order_number=1",
+    wx.showToast({
+      title: '购买成功',
     })
   },
   //加入到购物车
   goaddcart: function () {
-    wx.switchTab({
-      url: '../cart/index',
+    var that=this;
+
+    that.setData({
+      choose_modal:"block"
     })
   },
   //结束标识符

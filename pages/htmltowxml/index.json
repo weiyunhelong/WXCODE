@@ -1,5 +1,6 @@
 {
+  "navigationBarTitleText": "富文本显示",
   "usingComponents": {
-    "htmltowxml": "plugin://htmltowxml/view"
+    "parser": "../../h5parser/parser"
   }
 }

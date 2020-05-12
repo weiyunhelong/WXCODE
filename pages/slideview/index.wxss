@@ -1,0 +1,90 @@
+/* pages/slideview/index.wxss */
+
+.concatv {
+  display: flex;
+}
+
+.infovv {
+  width: 710rpx;
+  height: 135rpx;
+  line-height: 135rpx;
+  padding-left: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.namev {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.jobv {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.companyv {
+  font-size: 24rpx;
+  color: #666;
+}
+
+.righticon {
+  width: 15rpx;
+  height: 29rpx;
+  margin-top: 45.5rpx;
+}
+
+
+/*分类信息*/
+
+.catev {
+  height: 30rpx;
+  background: #eee;
+  line-height: 30rpx;
+  padding-left: 30rpx;
+  font-size: 20rpx;
+  font-weight: 500;
+  color: #333;
+}
+
+.concatv {
+  display: flex;
+}
+
+.avatar {
+  width: 84rpx;
+  height: 84rpx;
+  margin: 30rpx;
+  border-radius: 10rpx;
+}
+
+.infov {
+  width: 580rpx;
+  height: 135rpx;
+  line-height: 135rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.infovv {
+  width: 710rpx;
+  height: 135rpx;
+  line-height: 135rpx;
+  padding-left: 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.namev {
+  font-size: 28rpx;
+  color: #333;
+}
+
+/*一行文字*/
+
+.onehangtxt {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.noborder {
+  border-bottom: none;
+}

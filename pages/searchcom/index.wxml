@@ -1,0 +1,4 @@
+<!--pages/searchcom/index.wxml-->
+
+<!--搜索框-->
+<searchcom bindinput="getkeyword" />

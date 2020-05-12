@@ -1,9 +1,0 @@
-{
-  "usingComponents": {
-    "weatherlist": "plugin://WeatherPlugin/weatherlist",
-    "weather": "plugin://WeatherPlugin/weather",
-    "weath": "plugin://WeatherPlugin/weath",
-    "weathrow": "plugin://WeatherPlugin/weathrow"
-  },
-  "navigationBarTitleText": "天气预报"
-}

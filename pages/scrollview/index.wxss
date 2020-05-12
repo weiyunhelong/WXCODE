@@ -33,13 +33,14 @@
 /*分类部分*/
 /**分类栏**/  
 .classify{  
-  margin-top:20rpx;  
+  /* margin-top:20rpx;   */
+  border-top:1rpx solid #eee;
 }  
 .left-navbar{  
   position:absolute;  
   left:0;  
   width:25%;  
-  height:90%;  
+  height:100%;  
   background-color:#eee;  
   font-size:15px;  
 }  
@@ -59,7 +60,7 @@
   position:absolute;  
   right:0;  
   width:75%;  
-  height:90%; 
+  height:100%; 
 }  
 .img-banner{  
   height:250rpx;  

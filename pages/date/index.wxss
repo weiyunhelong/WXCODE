@@ -1,1 +1,4 @@
 /* pages/date/index.wxss */
+.yycalendar--yycalendar_time_view {
+  overflow: auto;
+}

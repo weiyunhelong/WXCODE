@@ -1,0 +1,10 @@
+<!--pages/slideview/index.wxml-->
+<block wx:for="{{datas}}" wx:key="item">
+  <mp-slideview buttons="{{slideBtns}}" bindbuttontap="slideopt" data-id="{{item.ID}}" data-name="{{item.Name}}">
+    <view class="concatv">  
+      <view class="infovv">
+        <view class="namev onehangtxt">{{item.Name}}</view>
+      </view>
+    </view>
+  </mp-slideview>
+</block>

@@ -697,7 +697,7 @@ page {
   width: fit-content;
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  min-width: 80rpx;
+  min-width: 120rpx;
   max-width: 400rpx;
   height: 50rpx;
   line-height: 50rpx;
@@ -714,16 +714,16 @@ page {
   width: fit-content;
   width: -webkit-fit-content;
   width: -moz-fit-content;
-  min-width: 80rpx;
+  min-width: 120rpx;
   max-width: 400rpx;
   height: 50rpx;
   line-height: 50rpx;
-  /* border: 2rpx red solid; */
   margin-left: 20rpx;
   margin-top: 20rpx;
   border-radius: 10rpx;
   text-align: center;
   background: #c62127;
+  border: 2rpx #c62127 solid;
   color: #fff;
 }
 
